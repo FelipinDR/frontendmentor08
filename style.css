@@ -51,9 +51,12 @@
     isolation: isolate;
   }
   /* My css */ 
-  main{
+  .containers{
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    " container01 container01"
+    " container02 container03";
     place-items: center;
     min-height: 100vh;
     gap: 1px;
@@ -65,13 +68,16 @@
     width: 33.813rem;
     height: 11.438;
     border: 2px solid red;
+    grid-area: container01;
   }
   .container02{
+    grid-area: container02;
     height: 13.75rem;
     width: 16.813rem;
     border: 2px solid green;
   }
   .container03{
+    grid-area:container03;
     height: 13.75rem;
     width: 16.813rem;
     border: 2px solid green;
